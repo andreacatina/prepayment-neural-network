@@ -1,32 +1,25 @@
-# prepayment-neural-network
-Overview
+# Prepayment Risk Prediction with Neural Network
 
-This project implements a neural network model to estimate the Conditional Prepayment Rate (CPR) of mortgage-backed securities. The objective is to capture the nonlinear relationship between loan characteristics, market conditions, and borrowers’ prepayment behavior, providing more accurate predictions than traditional logistic regression models.
+## Overview
+This project implements a neural network to estimate the **Conditional Prepayment Rate (CPR)** of mortgage-backed securities.  
+The model captures nonlinear relationships between loan characteristics, market conditions, and borrower behavior, providing more accurate forecasts compared to traditional logistic regression.
 
-Key Features
+## Features
+- Data preprocessing: cleaning, normalization, and feature engineering on loan-level datasets.  
+- Custom **volume-weighted loss function** to account for loan outstanding balances.  
+- Neural network built with **TensorFlow/Keras**, benchmarked against logistic regression.  
+- **Hyperparameter tuning** with KerasTuner (Hyperband).  
+- Evaluation: ROC-AUC, residual plots, and monthly CPR prediction vs. observed data.
 
-Data preprocessing: cleaning, normalization, and handling of mortgage loan-level datasets.
+## Technologies
+- Python (NumPy, Pandas, Scikit-learn, TensorFlow/Keras)  
+- KerasTuner for optimization  
+- Matplotlib / Seaborn for visualization  
 
-Custom loss function: volume-weighted error metric to account for the loan outstanding balance in training.
+## Results
+- The neural network outperformed logistic regression in predictive accuracy.  
+- The model effectively captured time-varying patterns of prepayment risk.  
+- Framework can be extended to other credit risk tasks (e.g., default, migration).  
 
-Model implementation: fully connected neural network built in TensorFlow/Keras, compared against logistic regression as a benchmark.
-
-Evaluation metrics: ROC-AUC, residual plots, and monthly prediction vs. actual CPR visualization.
-
-Hyperparameter tuning: optimized with KerasTuner Hyperband to select the best architecture, learning rate, and batch size.
-
-Technologies
-
-Python (NumPy, Pandas, Matplotlib, Scikit-learn, TensorFlow/Keras)
-
-KerasTuner for hyperparameter optimization
-
-Matplotlib/Seaborn for data visualization
-
-Results
-
-Neural network consistently outperformed logistic regression in predictive accuracy.
-
-Visual analysis confirmed the model’s ability to capture time-varying patterns of prepayment risk.
-
-The framework can be extended to other credit risk applications, such as default or migration modeling.
+---
+📌 Author: **Andrea Catina**
