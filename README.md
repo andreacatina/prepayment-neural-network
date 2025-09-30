@@ -22,4 +22,4 @@ The model captures nonlinear relationships between loan characteristics, market 
 - Framework can be extended to other credit risk tasks (e.g., default, migration).  
 
 ---
-📌 Author: **Andrea Catina**
+Author: **Andrea Catina**
